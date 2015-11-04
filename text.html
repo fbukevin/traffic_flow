@@ -1,0 +1,49 @@
+
+
+<head>
+    <meta charset='utf-8'>
+</head>
+<body>
+<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['sankey']}]}"></script>
+<div>Scale: 10^4</div><br>
+<div id="sankey_basic" style="width: 900px; height: 1000px;"></div>
+<script>
+    // reference: https://developers.google.com/chart/interactive/docs/gallery/sankey
+    google.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'From');
+        data.addColumn('string', 'To');
+        data.addColumn('number', 'Weight');
+        data.addRows([
+          [ '台北', '出口', 5.9990 ], [ '台北', '進口', 9.8972 ],
+          [ '三重', '出口', 4.0520 ], [ '三重', '進口', 7.5096 ],
+          [ '五股及五股轉接道', '出口', 12.7329 ], [ '五股及五股轉接道', '進口', 3.1801 ],
+          [ '泰山轉接道', '進口', 2.9948 ],
+          [ '林口', '出口', 13.4038], [ '林口', '進口', 12.6267],
+          [ '桃園', '出口', 9.7262 ], [ '桃園', '進口', 8.6690 ], 
+          [ '桃園機場', '出口', 6.5995 ], [ '桃園機場', '進口', 8.4521 ],
+          [ '內壢', '出口', 6.5811], [ '內壢', '進口', 7.6167],
+          [ '中壢', '出口', 5.0653 ], [ '中壢', '進口', 5.7724],
+          [ '平鎮系統', '出口', 4.2092 ], [ '平鎮系統', '進口', 4.8456 ],
+          [ '幼獅', '出口', 1.3495 ], [ '幼獅', '進口', 3.3576],
+          [ '楊梅', '出口', 7.154 ], [ '楊梅', '進口', 3.6845 ],
+          [ '高架楊梅端', '出口', 4.2459 ], [ '高架楊梅端', '進口', 0 ],
+          [ '湖口', '出口', 4.5985 ], [ '湖口', '進口', 1.0981 ],
+          [ '竹北', '出口', 5.1938 ], [ '竹北', '進口', 4.4382 ],
+          [ '新竹', '出口',  6.2756], [ '新竹', '進口', 1.00445 ],
+          [ '新竹系統', '出口', 4.4123 ], [ '新竹系統', '進口', 8.3806 ]
+        ]);
+
+        // Sets chart options.
+        var options = {
+          width: 600,
+        };
+
+        // Instantiates and draws our chart, passing in some options.
+        var chart = new google.visualization.Sankey(document.getElementById('sankey_basic'));
+        chart.draw(data, options);
+      }
+</script>   
+</body>
