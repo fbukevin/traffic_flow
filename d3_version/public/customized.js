@@ -22,7 +22,7 @@ var margin = {
 // width = 700 - margin.left - margin.right,
 // height = 300 - margin.top - margin.bottom;
 width = 1000;
-height = 1500;
+height = 1000;
 
 var formatNumber = d3.format(",.0f"), // zero decimal places
     format = function (d) {
