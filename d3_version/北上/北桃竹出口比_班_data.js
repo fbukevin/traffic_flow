@@ -4,7 +4,7 @@ var data = [
           { "source":'大台北', "target": '三重', "value":  3.90},
           { "source":'大台北', "target": '五股及五股轉接道', "value":	8.93 },
           { "source":'大台北', "target": '林口', "value": 14.35 },
-          { "source":'大台北', "target": '桃園', "value": 10.49 },
+          { "source":'大桃園', "target": '桃園', "value": 10.49 },
           { "source":'大桃園', "target": '機場系統', "value": 6.66},
           { "source":'大桃園', "target": '內壢', "value": 1.52},
           { "source":'大桃園', "target": '中壢', "value":5.29 },
