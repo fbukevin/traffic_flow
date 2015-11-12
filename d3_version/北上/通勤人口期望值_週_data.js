@@ -26,6 +26,6 @@ var data = [
   { "source":'大新竹', "target": '竹北', "value":-153.426  }, // negative?
   { "source":'湖口', "target": '出口總量', "value": 56.198 },
   { "source":'竹北', "target": '出口總量', "value":-153.426  } // negative?
-    ];
+  ];
 
 // 太多資料會有 <rec> 屬性給值是負值的問題，請到 customized 調高 height

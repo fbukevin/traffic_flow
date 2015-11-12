@@ -12,7 +12,7 @@ var data = [
   { "source":'大桃園', "target": '幼獅', "value": 1.79},
   { "source":'大桃園', "target": '楊梅', "value": 1.02},
   { "source":'大桃園', "target": '高架楊梅端', "value": 4.39},
-  { "source":'大新竹', "target": '', "value": 5.46},
+  { "source":'大新竹', "target": '湖口', "value": 5.46},
   { "source":'大新竹', "target": '竹北', "value": 5.28},
   { "source":'台北', "target": '出口總量', "value": 72.02},
   { "source":'三重', "target": '出口總量', "value": 13.49},

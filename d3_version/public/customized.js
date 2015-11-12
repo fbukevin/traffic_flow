@@ -1,5 +1,14 @@
 
-//require('./data.js'); // require() only defined in node.js, use <script src="data.js"> instead
+/* language translation */
+var lang = language_set('en');
+console.log(data);
+data.forEach(function(d){
+    d.source = lang[d.source];
+    d.target = lang[d.target];
+});
+
+
+/**************************************************************/
 
 var units = "Widgets";
 
