@@ -23,9 +23,9 @@ var data = [
   { "source":'幼獅', "target": '出口總量', "value":  16.651},
   { "source":'楊梅', "target": '出口總量', "value": 8.515 },
   { "source":'大新竹', "target": '湖口', "value":56.198  },
-  { "source":'大新竹', "target": '竹北', "value": 63.417  }, // negative?
+  { "source":'大新竹', "target": '竹北', "value":-153.426  }, // negative?
   { "source":'湖口', "target": '出口總量', "value": 56.198 },
-  { "source":'竹北', "target": '出口總量', "value": 63.417  } // negative?
+  { "source":'竹北', "target": '出口總量', "value":-153.426  } // negative?
   ];
 
 // 太多資料會有 <rec> 屬性給值是負值的問題，請到 customized 調高 height
