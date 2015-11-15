@@ -6,7 +6,7 @@ data.forEach(function(d){
     d.source = lang[d.source];
     d.target = lang[d.target];
 });
-
+console.log(data);
 
 /**************************************************************/
 
@@ -67,7 +67,8 @@ data.forEach(function (d) {
     graph.links.push({
         "source": d.source,
         "target": d.target,
-        "value": + d.value
+        "value": + d.value,
+        "percent": + d.percent
     });
 });
 
@@ -107,7 +108,7 @@ var link = svg.append("g").selectAll(".link")
     .append("path")
     .attr("class", "link")
     .attr("id",function(d,i) { return "linkLabel" + i; })
-    .attr("d", path)
+    .attr("d", path)                    // 應該是在這邊綁定 sankey，因為 var path = sankey.link();
     .style("stroke-width", function (d) {
        return Math.max(1, d.dy);
     })
@@ -177,9 +178,9 @@ var labelText = svg.selectAll(".labelText")
     .attr("dy",0)
   .append("textPath")
     .attr("xlink:href",function(d,i) { return "#linkLabel" + i;})
-    .text(function(d,i) {                                 
-        // return d.source.name + " -> " + d.target.name + " : " + d.value;
-        return d.value;
+    .text(function(d,i) {                          
+    console.log(d.percent);       
+        return d.value.toFixed(3) + ', (' + d.percent + '%)';
     });
 
 /* 讓 node 可拖曳 */
