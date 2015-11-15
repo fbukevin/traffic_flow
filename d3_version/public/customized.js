@@ -178,7 +178,8 @@ var labelText = svg.selectAll(".labelText")
   .append("textPath")
     .attr("xlink:href",function(d,i) { return "#linkLabel" + i;})
     .text(function(d,i) {                                 
-        return d.source.name + " -> " + d.target.name + " : " + d.value;
+        // return d.source.name + " -> " + d.target.name + " : " + d.value;
+        return d.value;
     });
 
 /* 讓 node 可拖曳 */
