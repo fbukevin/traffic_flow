@@ -9,8 +9,8 @@
 	.link:hover {
 	    stroke-opacity: .5;
 	}
-	* {
-	    font: 15px sans-serif; /* 顯字大小 */
+	*:not(h1) {
+	    font: 18px Georgia; /* 顯字大小 */
 	}
 	.linkLabel {
 	    z-index:10;
